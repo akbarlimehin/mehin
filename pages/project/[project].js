@@ -5,6 +5,7 @@ import projects from "../../constants/projects";
 import styles from '../../styles/Project.module.scss';
 import { useState } from 'react';
 import Overlay from '../../components/overlay';
+import getConfig from 'next/config'
 
 const Project = ({ projectInfo, pictures }) => {
   const [galleryImage, openGalleryImage] = useState(undefined);
@@ -77,7 +78,9 @@ export async function getServerSideProps(context) {
     }
   } else {
     const { imagesDir } = projectInfo;
-    const picturesFiles = await fs.readdir(`./public/projects/${imagesDir}`);
+
+    const root = getConfig().serverRuntimeConfig.PROJECT_ROOT;
+    const picturesFiles = await fs.readdir(`${root}/public/projects/${imagesDir}`);
 
     const pictures = new Array(picturesFiles.length - 1)
       .fill(null)
