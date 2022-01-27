@@ -1,0 +1,32 @@
+@import './variables.scss';
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+
+  @include breakpoint(sm) {
+    gap: 40px;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  @include breakpoint(lg) {
+    gap: 50px;
+    grid-template-columns: 1fr 4fr;
+  }
+
+  img {
+    margin: 0 auto;
+    width: 70%;
+
+    @include breakpoint(sm) {
+      width: 100%;
+    }
+  }
+
+  p {
+    color: $grey;
+    line-height: 170%;
+    font-size: 20px;
+  }
+}

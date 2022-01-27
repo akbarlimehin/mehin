@@ -1,0 +1,80 @@
+@import './variables.scss';
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px $padding-mobile;
+
+  @include breakpoint(sm) {
+    padding: 30px $padding-tablet;
+  }
+
+  @include breakpoint(lg) {
+    padding: 26px $padding;
+  }
+
+  img {
+    width: 45px;
+
+    @include breakpoint(lg) {
+      width: 56px;
+    }
+  }
+
+  .menuButton {
+    border: none;
+    background: transparent;
+    
+    img {
+      width: 40px;
+    }
+
+    @include breakpoint(sm) {
+      display: none;
+    }
+  }
+
+  .links {
+    display: none;
+
+    @include breakpoint(sm) {
+      display: flex;
+    }
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+  }
+
+  a {
+    display: block;
+    margin-left: 0;
+    transition: .25s;
+    font-size: 27px;
+    margin-bottom: 25px;
+    color: $white;
+
+    &:hover {
+      transform: scale(1.15);
+    }
+
+    &.active {
+      pointer-events: none;
+      font-weight: 600;
+    }
+
+    @include breakpoint(sm) {
+      color: $black;
+      font-size: 14px;
+      margin-left: 35px;
+      margin-bottom: 0;
+    }
+    
+    @include breakpoint(lg) {
+      font-size: 16px;
+      margin-left: 60px;
+    }
+  }
+}

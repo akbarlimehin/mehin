@@ -1,0 +1,54 @@
+@import './variables.scss';
+
+.container {
+  width: 100%;
+  position: relative;
+
+  * {
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .noMarginBottom {
+    margin-bottom: 0;
+  }
+
+  h1 {
+    color: $darker-white;
+    letter-spacing: 0.1em;
+    font-size: 60px;
+    line-height: 100%;
+    margin: 10px 0 35px;
+
+    @include breakpoint(sm) {
+      margin: 20px 0 50px;
+      font-size: 90px;
+    }
+
+    @include breakpoint(lg) {
+      font-size: 140px;
+    }
+  }
+  
+  h2 {
+    width: 100%;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.04em;
+    color: $black;
+    margin: 0;
+    font-size: 30px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include breakpoint(sm) {
+      font-size: 35px;
+    }
+
+    @include breakpoint(lg) {
+      font-size: 45px;
+    }
+  }
+}

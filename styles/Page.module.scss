@@ -1,0 +1,20 @@
+@import './variables.scss';
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+
+  .container {
+    padding: 0 $padding-mobile;
+
+    @include breakpoint(sm) {
+      padding: 0 $padding-tablet;
+    }
+
+    @include breakpoint(lg) {
+      padding: 0 $padding;
+    }
+  }
+}
