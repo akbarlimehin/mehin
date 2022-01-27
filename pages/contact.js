@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Page from '../components/page';
 import Title from '../components/title';
 import styles from '../styles/Contact.module.scss';
@@ -5,6 +6,10 @@ import styles from '../styles/Contact.module.scss';
 const Contact = () => {
   return (
     <Page>
+      <Head>
+        <title>Contact Me</title>
+      </Head>
+
       <Title>Contact me</Title>
 
       <div className={styles.container}>

@@ -1,9 +1,14 @@
+import Head from 'next/head';
 import Page from '../components/page';
 import Title from '../components/title'
 import styles from '../styles/About.module.scss';
 
 const About = () => (
   <Page>
+    <Head>
+      <title>About Me</title>
+    </Head>
+
     <Title>about me</Title>
     
     <div className={styles.about}>

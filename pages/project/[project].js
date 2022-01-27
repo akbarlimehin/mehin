@@ -5,15 +5,19 @@ import projects from "../../constants/projects";
 import styles from '../../styles/Project.module.scss';
 import { useState } from 'react';
 import Overlay from '../../components/overlay';
-import getConfig from 'next/config'
 import path from 'path';
+import Head from 'next/head';
 
 const Project = ({ projectInfo, pictures }) => {
   const [galleryImage, openGalleryImage] = useState(undefined);
-  const { displayTitle, description: { text, points } } = projectInfo;
+  const { title, displayTitle, description: { text, points } } = projectInfo;
 
   return (
     <Page>
+      <Head>
+        <title>{title}</title>
+      </Head>
+
       <Title removeMarginBottom={true}>{displayTitle}</Title>
 
       <div className={styles.project}>

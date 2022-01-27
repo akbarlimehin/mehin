@@ -1,9 +1,14 @@
+import Head from "next/head";
 import Page from "../components/page";
 import Title from "../components/title";
 import styles from '../styles/Resume.module.scss';
 
 const Resume = () => (
   <Page>
+    <Head>
+      <title>Resume</title>
+    </Head>
+
     <Title>resume</Title>
 
     <div className={styles.resume}>

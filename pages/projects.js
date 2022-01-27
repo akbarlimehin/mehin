@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Nav from '../components/nav'
 import Page from '../components/page';
 import Title from '../components/title'
@@ -7,6 +8,10 @@ import styles from '../styles/Projects.module.scss';
 export default function Home() {
   return (
     <Page>
+      <Head>
+        <title>Projects</title>
+      </Head>
+
       <Title>projects</Title>
 
       <div className={styles.projects}>
