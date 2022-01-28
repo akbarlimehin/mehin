@@ -45,7 +45,7 @@ const Project = ({ projectInfo, pictures }) => {
         </div>
       </div>
 
-      <Title removeMarginBottom={true}>Description</Title>
+      {/* <Title removeMarginBottom={true}>Description</Title> */}
 
       <div className={styles.description}>
         <div className={styles.points}>
