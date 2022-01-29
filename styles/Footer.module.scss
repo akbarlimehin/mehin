@@ -1,22 +1,56 @@
 @import './variables.scss';
 
 .footer {
-  background-color: $black;
-  padding: 20px $padding-mobile;
+  display: flex;
+  flex-direction: column;
+  background-color: #272727;
+  padding: 12px $padding-mobile;
   margin-top: 30px;
 
   @include breakpoint(sm) {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
     margin-top: 40px;
-    padding: 20px $padding-tablet;
+    padding: 12px $padding-tablet;
   }
 
   @include breakpoint(lg) {
     margin-top: 60px;
-    padding: 20px $padding;
+    padding: 12px $padding;
+  }
+  
+  * {
+    font-size: 14px;
+    color: $white;
+  }
+
+  p {
+    margin: 10px 0;
   }
 
   a {
-    font-size: 14px;
-    color: $white;
+    margin-top: 30px;
+    transition: .3s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    @include breakpoint(sm) {
+      text-align: right;
+      line-height: 150%;
+      max-width: 40%;
+      margin-top: 0;
+    }
+
+    @include breakpoint(lg) {
+      max-width: 100%;
+      line-height: 100%;
+    }
+
+    .underline {
+      text-decoration: underline;
+    }
   }
 }
