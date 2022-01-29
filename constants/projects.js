@@ -64,7 +64,7 @@ const projects = {
     description: {
       text: [
         'This private office was designed for a client of sophisticated taste, a person with her own understanding of aesthetics. The design concept balances feminine language with a business environment, accentuated by nude shades, book-matched marble elements with rich veins, wooden doors with massive-size handles, and custom elements, developed in only one copy.',
-        'Besides common office areas like reception zone, offices, WCs, the project also includes a dedicated space for formal entertainmentm, a lounge area.'
+        'Besides common office areas like reception zone, offices, WCs, the project also includes a dedicated space for formal entertainment and a lounge area.'
       ],
       points: {
         'Design and Planning Phase': '6 months',
