@@ -61,9 +61,10 @@ const Project = ({ projectInfo, pictures }) => {
 
         {
           text.map((paragraph, index) => (
-            <p key={`${index}${paragraph.substring(0, 4)}`}>
-              {paragraph}
-            </p>
+            <p 
+              key={`${index}${paragraph.substring(0, 4)}`}
+              dangerouslySetInnerHTML={{ __html: paragraph }}
+            />
           ))
         }
       </div>
@@ -88,7 +89,9 @@ export async function getServerSideProps(context) {
       `public/projects/${imagesDir}`
     ));
 
-    const pictures = new Array(picturesFiles.length)
+    const files = picturesFiles.filter(file => !/cover/.test(file));
+
+    const pictures = new Array(files.length)
       .fill(null)
       .map((_item, index) => `/projects/${imagesDir}/${index + 1}.jpg`);
 

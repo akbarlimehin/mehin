@@ -41,7 +41,7 @@ const projects = {
     title: 'Port Baku Towers - Private Office 1',
     displayTitle: 'Private Office 1',
     location: 'Baku, Azerbaijan',
-    thumbnail: '2.jpg',
+    thumbnail: 'cover.jpg',
     imagesDir: 'P3',
     description: {
       text: [
@@ -82,7 +82,7 @@ const projects = {
     description: {
       text: [
         'The barbeque space is a part of a private mountain estate project, mixing a loft design style with traditional notes. The client brief was to create an indoor space accompanied by an outdoor barbeque station, where they can gather family members and friends for informal events. The project was inspired by the fresh air of surrounding mountains and beautiful sunsets.',
-        'Due to the confidentiality, only limited information can be shared. Please get in touch, and I will be happy to provide more information.'
+        '<i>Due to the confidentiality, only limited information can be shared. Please get in touch, and I will be happy to provide more information.</i>'
       ],
       points: {
         'Design and Planning Phase': '1 months',
