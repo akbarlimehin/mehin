@@ -88,6 +88,17 @@
       resize: none;
     }
 
+    .response {
+      grid-column: 1 / 7;
+      text-align: center;
+      margin: 0;
+      color: $black;
+    }
+
+    .error {
+      color: #e73030;
+    }
+
     [type="submit"] {
       border: none;
       background-color: $black;
