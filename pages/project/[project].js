@@ -88,7 +88,7 @@ export async function getServerSideProps(context) {
       `public/projects/${imagesDir}`
     ));
 
-    const pictures = new Array(picturesFiles.length - 1)
+    const pictures = new Array(picturesFiles.length)
       .fill(null)
       .map((_item, index) => `/projects/${imagesDir}/${index + 1}.jpg`);
 

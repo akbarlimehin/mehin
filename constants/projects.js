@@ -42,6 +42,8 @@ const projects = {
       text: [
         'Located at one of the oldest and busiest streets of Baku, Azerbaijan, the Baku Caviar Boutique occupies a two-story historical building including a rooftop with a panoramic view to the Baku\'s old walled city and the Caspian Sea.',
         'We were asked to transform the awkward layout of the building to more than the retail outlet - an exquisite place where visitors can experience the rich Azerbaijani traditions of caviar production.',
+        'On the second floor of the Baku Caviar Boutique, guests can experience a unique gastronomic treat - tasting dishes from various types of caviar and fish delicacies.',
+        'On the very roof of the boutique, there is a cozy terrace with a bar and a seating area with a beautiful view of the Old Town and the Caspian Sea.'
       ],
       points: {
         'Design and Planning Phase': '3 months',
@@ -72,7 +74,7 @@ const projects = {
     title: 'Port Baku Towers - Private Office 2',
     displayTitle: 'Private Office 2',
     location: 'Baku, Azerbaijan',
-    thumbnail: '3.jpg',
+    thumbnail: '1.jpg',
     imagesDir: 'P4',
     description: {
       text: [
