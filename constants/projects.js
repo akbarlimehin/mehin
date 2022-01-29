@@ -1,4 +1,19 @@
 const projects = {
+  'the-barbeque-space': {
+    title: 'The Barbeque Space',
+    displayTitle: 'The Barbeque Space',
+    location: 'Baku, Azerbaijan',
+    thumbnail: '10.jpg',
+    imagesDir: 'P5',
+    description: {
+      text: [],
+      points: {
+        'Design and Planning Phase': '1 months',
+        'Construction Phase': '5 months',
+        'Square Footage': '500 sq. ft.'
+      },
+    },
+  },
   'port-baku-towers': {
     title: 'Port Baku Towers - Private Residence',
     displayTitle: 'Private Residence',
