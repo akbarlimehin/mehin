@@ -4,7 +4,7 @@ import { useState } from "react";
 import Overlay from './overlay';
 import styles from '../styles/Nav.module.scss';
 
-const links = {
+export const links = {
   'projects': 'Projects',
   'resume': 'Resume',
   'about': 'About me',

@@ -1,10 +1,26 @@
+import Link from 'next/link';
 import styles from '../styles/Footer.module.scss';
+import { links } from './nav';
 
 const Footer = () => (
   <div className={styles.footer}>
-    <div>
+    <div className={styles.info}>
       <p>Mehin Akbarli</p>
       <p>akberli.mehin@gmail.com</p>
+    </div>
+
+    <div className={styles.links}>
+      {
+        Object.keys(links).map(key => {
+          const path = `/${key}`;
+      
+          return (
+            <Link href={path} key={key}>
+              <a>{links[key]}</a>
+            </Link>
+          )
+        })
+      }
     </div>
 
     <a

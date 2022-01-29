@@ -1,19 +1,4 @@
 const projects = {
-  'the-barbeque-space': {
-    title: 'The Barbeque Space',
-    displayTitle: 'The Barbeque Space',
-    location: 'Baku, Azerbaijan',
-    thumbnail: '10.jpg',
-    imagesDir: 'P5',
-    description: {
-      text: [],
-      points: {
-        'Design and Planning Phase': '1 months',
-        'Construction Phase': '5 months',
-        'Square Footage': '500 sq. ft.'
-      },
-    },
-  },
   'port-baku-towers': {
     title: 'Port Baku Towers - Private Residence',
     displayTitle: 'Private Residence',
@@ -87,7 +72,25 @@ const projects = {
         'Square Footage': '14,500 sq. ft.'
       },
     },
-  }
+  },
+  'the-barbeque-space': {
+    title: 'The Barbeque Space',
+    displayTitle: 'The Barbeque Space',
+    location: 'Baku, Azerbaijan',
+    thumbnail: '10.jpg',
+    imagesDir: 'P5',
+    description: {
+      text: [
+        'The barbeque space is a part of a private mountain estate project, mixing a loft design style with traditional notes. The client brief was to create an indoor space accompanied by an outdoor barbeque station, where they can gather family members and friends for informal events. The project was inspired by the fresh air of surrounding mountains and beautiful sunsets.',
+        'Due to the confidentiality, only limited information can be shared. Please get in touch, and I will be happy to provide more information.'
+      ],
+      points: {
+        'Design and Planning Phase': '1 months',
+        'Construction Phase': '5 months',
+        'Square Footage': '500 sq. ft.'
+      },
+    },
+  },
 };
 
 export default projects;
