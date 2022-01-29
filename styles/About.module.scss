@@ -27,6 +27,12 @@
   p {
     color: $grey;
     line-height: 170%;
-    font-size: 20px;
+    font-size: 17px;
+
+    @include breakpoint(sm) {
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
   }
 }
