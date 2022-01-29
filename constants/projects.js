@@ -76,7 +76,7 @@ const projects = {
   'the-barbeque-space': {
     title: 'The Barbeque Space',
     displayTitle: 'The Barbeque Space',
-    location: 'Baku, Azerbaijan',
+    location: '-, Azerbaijan',
     thumbnail: '10.jpg',
     imagesDir: 'P5',
     description: {
