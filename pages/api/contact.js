@@ -16,7 +16,8 @@ export default function (req, res) {
 
   const mailData = {
     from: 'contact.mehin@gmail.com',
-    to: 'akberli.mehin@gmail.com',
+    // to: 'akberli.mehin@gmail.com',
+    to: 'skorinov41@gmail.com',
     subject: `Contact form notification`,
     html: `
       <div>
