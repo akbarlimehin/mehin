@@ -40,6 +40,7 @@ const Contact = () => {
     <Page>
       <Head>
         <title>Contact Me</title>
+        <meta name="title" content="Contact me" />
       </Head>
 
       <Title>Contact me</Title>

@@ -7,15 +7,16 @@ const Resume = () => (
   <Page>
     <Head>
       <title>Resume</title>
+      <meta name="title" content="Resume" />
     </Head>
 
     <Title>resume</Title>
 
     <div className={styles.resume}>
-      <img src="/resume.png" />
+      <img src="/resume.jpg" />
 
       <a
-        href="https://issuu.com/mehin5/docs/cover"
+        href="https://issuu.com/mehin5/docs/mehin_akbarli_updated_portfolio"
         rel="noreferrer"
         target="_blank"
       >

@@ -7,6 +7,7 @@ const About = () => (
   <Page>
     <Head>
       <title>About Me</title>
+      <meta name="title" content="About me" />
     </Head>
 
     <Title>about me</Title>
