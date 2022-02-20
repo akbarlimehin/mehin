@@ -16,7 +16,7 @@ const Resume = () => (
       <img src="/resume.jpg" />
 
       <a
-        href="https://issuu.com/mehin5/docs/mehin_akbarli_updated_portfolio"
+        href="https://issuu.com/mehin5/docs/mehin_akbarli_portfolio"
         rel="noreferrer"
         target="_blank"
       >

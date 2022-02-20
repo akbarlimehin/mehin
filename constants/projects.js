@@ -74,8 +74,8 @@ const projects = {
     },
   },
   'the-barbeque-space': {
-    title: 'The Barbeque Space',
-    displayTitle: 'The Barbeque Space',
+    title: 'Barbeque Space',
+    displayTitle: 'Barbeque Space',
     location: '-, Azerbaijan',
     thumbnail: '10.jpg',
     imagesDir: 'P5',
