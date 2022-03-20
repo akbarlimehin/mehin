@@ -24,11 +24,11 @@ const Footer = () => (
     </div>
 
     <a
-      href="https://norton-dev.com/"
+      href="https://www.hollium.com/"
       target="_blank"
       rel="noreferrer"
     >
-      Website designed and developed by <span className={styles.underline}>Norton</span>
+      Website designed and developed by <span className={styles.underline}>Hollium</span>
     </a>
   </div>
 )
