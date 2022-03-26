@@ -25,7 +25,7 @@ const About = () => (
         </p>
 
         <p>
-          I feel fortunate that I have been able to travel and learn more about Middle Eastern, European, and American design culture. The challenge of integrating traditional culture and technique into design fascinates me and inspires my works. I center my designs around the tension between rich finishes and repetitive forms to create spaces that catch an eye and provoke emotions. I welcome novelties and love working with elements and colors that have been combined little to no extent.
+          I feel fortunate that I have been able to travel and learn more about Middle Eastern, European, and American design culture. The challenge of integrating traditional culture and technique into design fascinates me and inspires my works. I center my designs around the tension between rich finishes and repetitive forms to create spaces that catch an eye and provoke emotions.
         </p>
       </div>
     </div>
