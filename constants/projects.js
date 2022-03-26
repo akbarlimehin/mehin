@@ -45,7 +45,7 @@ const projects = {
     imagesDir: 'P3',
     description: {
       text: [
-        'The client brief was to design a high-end office for a privately owned business that not only responds to the practice\'s daily needs but also reflects the business\'s character and value. The space includes a reception lobby, a waiting area, an open layout workspace, several spacious rooms for executives incluiding private WCs, small and large meeting rooms, and WCs for employees.',
+        'The client brief was to design a high-end office for a privately owned business that not only responds to the practice\'s daily needs but also reflects the business\'s character and value. The space includes a reception lobby, a waiting area, an open layout workspace, several spacious rooms for executives including private WCs, small and large meeting rooms, and WCs for employees.',
         'Materials and colors - extra-large tile floors, light colored wooden walls combined with fire-resistant fabrics, and marble - formed a gentle, calming composition. At the same time, a range of textures added richness, warmth, and tactility.'
       ],
       points: {
@@ -74,11 +74,12 @@ const projects = {
     },
   },
   'the-barbeque-space': {
-    title: 'BBQ Space',
-    displayTitle: 'BBQ Space',
+    title: '',
+    displayTitle: '',
     location: '-, Azerbaijan',
     thumbnail: '10.jpg',
     imagesDir: 'P5',
+    metaTitle: 'Akbarli Mehin\'s Project',
     description: {
       text: [
         'BBQ space is a part of a private mountain estate project, mixing a loft design style with traditional notes. The client brief was to create an indoor space accompanied by an outdoor barbeque station, where they can gather family members and friends for informal events. The project was inspired by the fresh air of surrounding mountains and beautiful sunsets.',

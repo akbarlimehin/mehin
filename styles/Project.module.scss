@@ -4,6 +4,62 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  .overlayWrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @include breakpoint(sm) {
+      flex-direction: row;
+    }
+  }
+
+  .overlayButton {
+    margin: 2em;
+    background: transparent;
+    border: none;
+    transition: .3s;
+
+    &:first-child {
+      transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg);
+    }
+
+    &:nth-of-type(2) {
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+
+    .arrow {
+      transition: .3s;
+    }
+
+    &:hover .arrow {
+      transform: scale(1.2);
+    }
+  }
+
+  .arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 7px;
+  }
+
+  @include breakpoint(sm) {
+    .overlayButton {
+      &:first-child {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+      }
+
+      &:nth-of-type(2) {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+      }
+    }
+  }
   
   .italic {
     text-align: center;

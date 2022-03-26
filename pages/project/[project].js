@@ -9,22 +9,58 @@ import path from 'path';
 import Head from 'next/head';
 
 const Project = ({ projectInfo, pictures }) => {
-  const [galleryImage, openGalleryImage] = useState(undefined);
-  const { title, displayTitle, description: { text, points } } = projectInfo;
+  const [galleryImageIndex, setGalleryImageIndex] = useState(undefined);
+  const { title, displayTitle, metaTitle, description: { text, points } } = projectInfo;
+
+  const switchToNextImage = () => {
+    const nextIndex = galleryImageIndex + 1;
+
+    if (nextIndex >= pictures.length) {
+      setGalleryImageIndex(0);
+    } else {
+      setGalleryImageIndex(nextIndex);
+    }
+  };
+
+  const switchToPrevImage = () => {
+    const prevIndex = galleryImageIndex - 1;
+
+    if (prevIndex < 0) {
+      setGalleryImageIndex(pictures.length - 1);
+    } else {
+      setGalleryImageIndex(prevIndex);
+    }
+  }
 
   return (
     <Page>
       <Head>
-        <title>{title}</title>
+        <title>{metaTitle || title}</title>
       </Head>
 
       <Title removeMarginBottom={true}>{displayTitle}</Title>
 
       <div className={styles.project}>
-        { galleryImage && 
+        { galleryImageIndex !== undefined && 
           <div className={styles.gallery}>
-            <Overlay closeOverlay={() => openGalleryImage(undefined)}>
-              <img src={galleryImage} />
+            <Overlay closeOverlay={() => setGalleryImageIndex(undefined)}>
+              <div className={styles.overlayWrap}>
+                <button
+                  className={styles.overlayButton}
+                  onClick={switchToPrevImage}
+                >
+                  <div className={styles.arrow} />
+                </button>
+
+                <img src={pictures[galleryImageIndex]} />
+
+                <button
+                  className={styles.overlayButton} 
+                  onClick={switchToNextImage}
+                >
+                  <div className={styles.arrow} />
+                </button>
+              </div>
             </Overlay>
           </div>
         }
@@ -34,18 +70,16 @@ const Project = ({ projectInfo, pictures }) => {
 
         <div className={styles.images}>
           {
-            pictures.map(picture => (
+            pictures.map((picture, index) => (
               <img
                 src={picture}
-                onClick={() => openGalleryImage(picture)}
+                onClick={() => setGalleryImageIndex(index)}
                 key={picture}
               />
             ))
           }
         </div>
       </div>
-
-      {/* <Title removeMarginBottom={true}>Description</Title> */}
 
       <div className={styles.description}>
         <div className={styles.points}>
