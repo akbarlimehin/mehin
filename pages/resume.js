@@ -14,14 +14,6 @@ const Resume = () => (
 
     <div className={styles.resume}>
       <img src="/resume.jpg" />
-
-      <a
-        href="https://issuu.com/mehin5/docs/mehin_akbarli_portfolio"
-        rel="noreferrer"
-        target="_blank"
-      >
-        See more
-      </a>
     </div>
   </Page>
 );
